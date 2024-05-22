@@ -4,6 +4,7 @@ body {
   }
   
     .emojis {
+    /* Use the grid properties to layout the emoji cards. */
     display:grid;
     grid-template-columns: repeat(2,1fr);
     gap:1rem;
@@ -14,6 +15,9 @@ body {
     border: 1px solid #222;
     border-radius: 8px;
     padding: 1rem;
+    /* Use the flexbox properties to layout the content of the emoji cards. */
+    display: flex;
+    
   }
   
   .emoji h2 {
