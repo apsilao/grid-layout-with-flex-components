@@ -23,20 +23,33 @@ body {
      align-items: center; 
 
   }
-  
-  .emoji h2 {
-    margin: 0;
-    border-bottom: 2px solid #ccc;
+
+  .icon {
+    font-size: 4rem;
+    /* to put emoji icon on top order */
+    order: 1; 
   }
   
-  .emoji a {
+  h2 {
+    margin: 0;
+    border-bottom: 2px solid #ccc;
+     /* to put heading in 2nd order */
+     order: 2; 
+  }
+
+  p {
+    /* to put paragraph in 3rd order */
+    order: 3; 
+  }
+
+  
+  a {
     text-decoration: none;
     background-color: #781BAA;
     color: white;
     padding: 1rem;
     border-radius: 8px;
+     /* to put anchor on the bottom of the card content order */
+     order: 4; 
   }
   
-  .icon {
-    font-size: 4rem;
-  }
