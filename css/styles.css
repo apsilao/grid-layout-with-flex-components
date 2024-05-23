@@ -23,11 +23,33 @@ h1 {
 .emojis {
     /* Used the grid properties to layout the emoji cards. */
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     /* add gap for the cards */
     gap: 1rem;
 
+    /* arrange grid positions */
+    grid-template-areas:
+        ". card1 card2 ."
+        ". card3 card4 .";
 }
+
+/* link cards to position using grid area template */
+.emoji:nth-child(1) {
+    grid-area: card1;
+}
+
+.emoji:nth-child(2) {
+    grid-area: card2;
+}
+
+.emoji:nth-child(3) {
+    grid-area: card3;
+}
+
+.emoji:nth-child(4) {
+    grid-area: card4;
+}
+
 
 .emoji {
     border: 1px solid #222;
