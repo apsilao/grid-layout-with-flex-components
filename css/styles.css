@@ -39,7 +39,7 @@ h2 {
     /* to align card text left */
     text-align: left;
     /* to stretch and occupy available width  */
-    width: 100%;
+    flex-grow:1;
 }
 
 
@@ -47,7 +47,8 @@ p {
     /* to put paragraph in 3rd order */
     order: 3;
     text-align: left;
-    width: 100%;
+    /* to stretch p content and occupy available space  */
+    flex-grow:1;
 
 }
 
